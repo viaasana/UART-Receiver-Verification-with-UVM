@@ -1,0 +1,180 @@
+# vsim -c top -do "sim.do" "+UVM_TESTNAME=uart_demo_test" "+UVM_VERBOSITY=UVM_MEDIUM" -l uart_cp1.log 
+# Start time: 11:03:11 on Nov 18,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.uart_tlm_pkg(fast)
+# Loading work.uart_seq_pkg(fast)
+# Loading work.uart_cfg_pkg(fast)
+# Loading work.uart_chk_pkg(fast)
+# Loading work.uart_if(fast)
+# Loading work.uart_slave_agent_pkg(fast)
+# Loading work.uart_agent_pkg(fast)
+# Loading work.uart_env_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.receiver(fast)
+# Loading work.clk_rst_if(fast)
+# Loading /home/eda/siemens/questasim/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# do sim.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test uart_demo_test...
+# UVM_INFO /home/s23520966/uart_rx/tb/tst/uart_demo_test.sv(33) @ 1000: uvm_test_top [TEST] Starting sequence...
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x00 (8'b00000000)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 83051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x00 (8'b00000000)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 83051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #1 MATCH | expected=0x00 == actual=0x00
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 87001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xff (8'b11111111)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 170051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xff (8'b11111111)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 170051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #2 MATCH | expected=0xff == actual=0xff
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 174001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x55 (8'b01010101)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 257051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x55 (8'b01010101)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 257051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #3 MATCH | expected=0x55 == actual=0x55
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 261001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xaa (8'b10101010)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 344051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xaa (8'b10101010)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 344051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #4 MATCH | expected=0xaa == actual=0xaa
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 348001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x01 (8'b00000001)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 431051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x01 (8'b00000001)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 431051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #5 MATCH | expected=0x01 == actual=0x01
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 435001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x80 (8'b10000000)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 518051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x80 (8'b10000000)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 518051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #6 MATCH | expected=0x80 == actual=0x80
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 522001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xcf (8'b11001111)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 605051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xcf (8'b11001111)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 605051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #7 MATCH | expected=0xcf == actual=0xcf
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 609001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xc9 (8'b11001001)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 692051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xc9 (8'b11001001)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 692051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #8 MATCH | expected=0xc9 == actual=0xc9
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 696001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xf2 (8'b11110010)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 779051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xf2 (8'b11110010)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 779051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #9 MATCH | expected=0xf2 == actual=0xf2
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 783001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xf6 (8'b11110110)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 866051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xf6 (8'b11110110)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 866051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #10 MATCH | expected=0xf6 == actual=0xf6
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 870001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x2e (8'b00101110)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 953051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x2e (8'b00101110)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 953051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #11 MATCH | expected=0x2e == actual=0x2e
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 957001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x2a (8'b00101010)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1040051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x2a (8'b00101010)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1040051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #12 MATCH | expected=0x2a == actual=0x2a
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1044001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xce (8'b11001110)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1127051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xce (8'b11001110)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1127051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #13 MATCH | expected=0xce == actual=0xce
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1131001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xa3 (8'b10100011)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1214051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xa3 (8'b10100011)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1214051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #14 MATCH | expected=0xa3 == actual=0xa3
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1218001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x14 (8'b00010100)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1301051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x14 (8'b00010100)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1301051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #15 MATCH | expected=0x14 == actual=0x14
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1305001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xf5 (8'b11110101)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1388051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xf5 (8'b11110101)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1388051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #16 MATCH | expected=0xf5 == actual=0xf5
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1392001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x2b (8'b00101011)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1475051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x2b (8'b00101011)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1475051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #17 MATCH | expected=0x2b == actual=0x2b
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1479001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x40 (8'b01000000)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1562051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x40 (8'b01000000)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1562051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #18 MATCH | expected=0x40 == actual=0x40
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1566001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x67 (8'b01100111)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1649051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x67 (8'b01100111)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1649051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #19 MATCH | expected=0x67 == actual=0x67
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1653001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x7a (8'b01111010)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1736051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x7a (8'b01111010)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1736051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #20 MATCH | expected=0x7a == actual=0x7a
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1740001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x13 (8'b00010011)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1823051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x13 (8'b00010011)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1823051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #21 MATCH | expected=0x13 == actual=0x13
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1827001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x97 (8'b10010111)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1910051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x97 (8'b10010111)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1910051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #22 MATCH | expected=0x97 == actual=0x97
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 1914001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xcb (8'b11001011)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 1997051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xcb (8'b11001011)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 1997051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #23 MATCH | expected=0xcb == actual=0xcb
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2001001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xbe (8'b10111110)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2084051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xbe (8'b10111110)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2084051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #24 MATCH | expected=0xbe == actual=0xbe
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2088001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x3b (8'b00111011)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2171051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x3b (8'b00111011)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2171051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #25 MATCH | expected=0x3b == actual=0x3b
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2175001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x41 (8'b01000001)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2258051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x41 (8'b01000001)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2258051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #26 MATCH | expected=0x41 == actual=0x41
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2262001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x14 (8'b00010100)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2345051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x14 (8'b00010100)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2345051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #27 MATCH | expected=0x14 == actual=0x14
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2349001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0xee (8'b11101110)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2432051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0xee (8'b11101110)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2432051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #28 MATCH | expected=0xee == actual=0xee
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2436001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x41 (8'b01000001)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2519051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x41 (8'b01000001)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2519051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #29 MATCH | expected=0x41 == actual=0x41
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2523001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x94 (8'b10010100)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2606051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x94 (8'b10010100)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2606051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #30 MATCH | expected=0x94 == actual=0x94
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2610001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x22 (8'b00100010)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2693051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x22 (8'b00100010)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2693051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #31 MATCH | expected=0x22 == actual=0x22
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/master/uart_driver.sv(35) @ 2697001000: uvm_test_top.env.master.driver [DRV] Driving UART frame: data = 0x93 (8'b10010011)
+# UVM_INFO /home/s23520966/uart_rx/tb/agt/slave/uart_slave_monitor.sv(34) @ 2780051000: uvm_test_top.env.slave.monitor [SLV_MON] Captured DUT output: o_data = 0x93 (8'b10010011)
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(41) @ 2780051000: uvm_test_top.env.scoreboard [SB_MATCH] Frame #32 MATCH | expected=0x93 == actual=0x93
+# UVM_INFO /home/s23520966/uart_rx/tb/tst/uart_demo_test.sv(35) @ 2784001000: uvm_test_top [TEST] Sequence finished sending all frames.
+# UVM_INFO /home/s23520966/uart_rx/tb/tst/uart_demo_test.sv(42) @ 2784011000: uvm_test_top [TEST] Test finished successfully.
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 2784011000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/s23520966/uart_rx/tb/chk/sb.sv(60) @ 2784011000: uvm_test_top.env.scoreboard [SB_PASS] Successfully compared 32 frames with no errors
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  104
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [DRV]    32
+# [Questa UVM]     2
+# [RNTST]     1
+# [SB_MATCH]    32
+# [SB_PASS]     1
+# [SLV_MON]    32
+# [TEST]     3
+# [TEST_DONE]     1
+# ** Note: $finish    : /home/eda/siemens/questasim/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 2784011 ns  Iteration: 54  Instance: /top
+# End time: 11:03:15 on Nov 18,2026, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

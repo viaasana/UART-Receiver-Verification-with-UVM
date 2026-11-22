@@ -1,0 +1,7 @@
+# vsim -c top -do "sim.do" "+UVM_TESTNAME=uart_demo_test" "+UVM_VERBOSITY=UVM_MEDIUM" -l uart_cp1.log 
+# Start time: 11:01:27 on Nov 18,2026
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 11:01:27 on Nov 18,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

@@ -1,0 +1,219 @@
+QuestaSim-64 vcover 2021.2_1 Coverage Utility 2021.05 May 15 2021
+Start time: 11:37:58 on Nov 18,2026
+vcover report -detail -instance=/top/dut0 top.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/dut0
+=== Design Unit: work.receiver
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        18        16         2    88.88%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/dut0
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File /home/s23520966/uart_rx/dut/receiver.v
+------------------------------------CASE Branch------------------------------------
+    46                                     26562     Count coming in to CASE
+    47              1                         66     
+    60              1                       1408     
+    81              1                      22272     
+    109             1                       2784     
+    127             1                         32     
+    134             1                    ***0***     
+Branch totals: 5 hits of 6 branches = 83.33%
+
+------------------------------------IF Branch------------------------------------
+    53                                        66     Count coming in to IF
+    53              1                         32     
+    55              1                         34     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    62                                      1408     Count coming in to IF
+    62              1                         32     
+    72              1                       1376     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    64                                        32     Count coming in to IF
+    64              1                         32     
+    69              1                    ***0***     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    83                                     22272     Count coming in to IF
+    83              1                      22016     
+    88              1                        256     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    94                                       256     Count coming in to IF
+    94              1                        224     
+    99              1                         32     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    112                                     2784     Count coming in to IF
+    112             1                       2752     
+    117             1                         32     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       4         4         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for instance /top/dut0 --
+
+  File /home/s23520966/uart_rx/dut/receiver.v
+----------------Focused Condition View-------------------
+Line       62 Item    1  (r_Clock_Count == ((87 - 1) / 2))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       83 Item    1  (r_Clock_Count < (87 - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       94 Item    1  (r_Bit_Index < 7)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       112 Item    1  (r_Clock_Count < (87 - 1))
+Condition totals: 1 of 1 input term covered = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       5         5         0   100.00%
+    FSM Transitions                  6         5         1    83.33%
+
+================================FSM Details================================
+
+FSM Coverage for instance /top/dut0 --
+
+FSM_ID: r_SM_Main
+    Current State Object : r_SM_Main
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  47              s_IDLE                   0
+  60      s_RX_START_BIT                   1
+  81      s_RX_DATA_BITS                   2
+ 109       s_RX_STOP_BIT                   3
+ 127           s_CLEANUP                   4
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                  s_IDLE                  66          
+          s_RX_START_BIT                1408          
+          s_RX_DATA_BITS               22272          
+           s_RX_STOP_BIT                2784          
+               s_CLEANUP                  32          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+  54                   0                  32          s_IDLE -> s_RX_START_BIT          
+  67                   2                  32          s_RX_START_BIT -> s_RX_DATA_BITS          
+ 102                   3                  32          s_RX_DATA_BITS -> s_RX_STOP_BIT          
+ 121                   4                  32          s_RX_STOP_BIT -> s_CLEANUP          
+ 129                   5                  32          s_CLEANUP -> s_IDLE           
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+  70                   1          s_RX_START_BIT -> s_IDLE
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   5         5         0   100.00%
+        FSM Transitions              6         5         1    83.33%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      37        35         2    94.59%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/dut0 --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File /home/s23520966/uart_rx/dut/receiver.v
+    23              1                          1     
+    24              1                          1     
+    26              1                          1     
+    27              1                          1     
+    28              1                          1     
+    29              1                          1     
+    30              1                          1     
+    35              1                        517     
+    37              1                        517     
+    38              1                        517     
+    43              1                      26562     
+    49              1                         66     
+    50              1                         66     
+    51              1                         66     
+    54              1                         32     
+    56              1                         34     
+    66              1                         32     
+    67              1                         32     
+    70              1                    ***0***     
+    74              1                       1376     
+    75              1                       1376     
+    85              1                      22016     
+    86              1                      22016     
+    90              1                        256     
+    91              1                        256     
+    96              1                        224     
+    97              1                        224     
+    101             1                         32     
+    102             1                         32     
+    114             1                       2752     
+    115             1                       2752     
+    119             1                         32     
+    120             1                         32     
+    121             1                         32     
+    129             1                         32     
+    130             1                         32     
+    135             1                    ***0***     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         72        70         2    97.22%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /top/dut0 --
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                  r_Clock_Count[7]           0           0        0.00 
+
+Total Node Count     =         36 
+Toggled Node Count   =         35 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      97.22% (70 of 72 bins)
+
+
+Total Coverage By Instance (filtered view): 94.00%
+
+End time: 11:37:58 on Nov 18,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
